@@ -10,13 +10,21 @@ let package = Package(
             name: "BinaryIntegerFormatting",
             targets: ["BinaryIntegerFormatting"]),
     ],
-    dependencies: [],
+    dependencies: [
+        .package(url: "https://github.com/wltrup/CollectionSplitting.git", from: "0.1.0"),
+        .package(url: "https://github.com/wltrup/StringFormatting.git", from: "0.1.0"),
+    ],
     targets: [
         .target(
             name: "BinaryIntegerFormatting",
-            dependencies: []),
+            dependencies: [
+                "CollectionSplitting",
+                "StringFormatting",
+            ]
+        ),
         .testTarget(
             name: "BinaryIntegerFormattingTests",
-            dependencies: ["BinaryIntegerFormatting"]),
+            dependencies: ["BinaryIntegerFormatting"]
+        ),
     ]
 )

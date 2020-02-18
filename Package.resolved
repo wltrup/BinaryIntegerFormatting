@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CollectionSplitting",
+        "repositoryURL": "https://github.com/wltrup/CollectionSplitting.git",
+        "state": {
+          "branch": null,
+          "revision": "98e8e2be8d2fc4043af58fd4c5a82bf6fce7af8c",
+          "version": "0.1.0"
+        }
+      },
+      {
+        "package": "StringFormatting",
+        "repositoryURL": "https://github.com/wltrup/StringFormatting.git",
+        "state": {
+          "branch": null,
+          "revision": "aaf8ff144d81fc081e7e3b6e61d67fb4796ab35d",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
