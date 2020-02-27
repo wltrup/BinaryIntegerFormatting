@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/wltrup/CollectionSplitting.git",
         "state": {
           "branch": null,
-          "revision": "98e8e2be8d2fc4043af58fd4c5a82bf6fce7af8c",
+          "revision": "b9f2c5d725bea73726e8291f8bd8cc01b91ae1c1",
           "version": "0.1.0"
         }
       },
@@ -15,7 +15,7 @@
         "repositoryURL": "https://github.com/wltrup/StringFormatting.git",
         "state": {
           "branch": null,
-          "revision": "aaf8ff144d81fc081e7e3b6e61d67fb4796ab35d",
+          "revision": "33321d9d26921465d24654eff168eb4e5c9d1cb3",
           "version": "0.1.0"
         }
       }

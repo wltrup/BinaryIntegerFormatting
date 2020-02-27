@@ -41,9 +41,11 @@ public extension BinaryInteger {
         return digits(base: 10)
     }
     
-    func digitString<Base: BinaryInteger>(base: Base,
-                                          separator c: Character,
-                                          every n: Int) -> String {
+    func digitString<Base: BinaryInteger>(
+        base: Base,
+        separator c: Character,
+        every n: Int
+    ) -> String {
         
         guard self != 0 else { return "0" }
         guard base > 1 && n >= 0 else { return "" }
@@ -61,9 +63,11 @@ public extension BinaryInteger {
         
     }
     
-    func binaryString(separator c: Character = ".",
-                      every n: Int = 0,
-                      fullBithWidth: Bool = false) -> String {
+    func binaryString(
+        separator c: Character = ".",
+        every n: Int = 0,
+        fullBithWidth: Bool = false
+    ) -> String {
         
         guard self >= 0 else {
             fatalError(
@@ -91,20 +95,23 @@ public extension BinaryInteger {
         
     }
     
-    func decimalString(separator c: Character = ",", every n: Int = 3) -> String {
+    func decimalString(
+        separator c: Character = ",",
+        every n: Int = 3
+    ) -> String {
         return (self < 0 ? "-" : "") + digitString(base: 10, separator: c, every: n)
     }
     
-    func formatted(width: Int,
-                   leftPadding: Character = " ",
-                   rightPadding: Character = " ",
-                   alignment: String.Alignment = .right) -> String {
-        
+    func formatted(
+        width: Int,
+        leftPadding: Character = " ",
+        rightPadding: Character = " ",
+        alignment: String.Alignment = .right
+    ) -> String {
         return decimalString().formatted(width: width,
                                          leftPadding: leftPadding,
                                          rightPadding: rightPadding,
                                          alignment: alignment)
-        
     }
     
     var description: String {
